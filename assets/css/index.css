@@ -1,0 +1,336 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    background-color: #23272A;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/*  */
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #23272A;
+
+}
+
+/* header inicial  */
+
+.header {
+    height: 100vh;
+    background-image: 
+    linear-gradient(to right bottom, 
+    rgba(169, 177, 52, 0.8),
+    rgb(204, 122, 45)),
+   url('/images/marcas-background.jpg');
+    background-position: top;
+    position: relative;
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+}
+
+
+.text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.heading-primeiro {
+    color: #fff;
+    text-transform: uppercase;
+
+    backface-visibility: hidden;
+    margin-bottom: 30px;
+}
+
+.heading-primeiro-main {
+    display: block;
+    font-size: 26px;
+    font-weight: 400;
+    letter-spacing: 5px;
+}
+
+.heading-primeiro-sub {
+    display: block;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 7.4px;
+}
+
+.btn:link,
+.btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all .2s;
+    position: relative;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-white {
+    background-color: #fff;
+    color: #777;
+  font-size: 14px;
+}
+
+
+/* Form consulta FIPE */
+
+.opcoes-selecao {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.opcoes-selecao input[type="radio"] {
+    display: none;
+}
+
+.opcoes-selecao label {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #F0F0F0;
+    border: 1px solid #CCC;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.opcoes-selecao input[type="radio"]:checked+label {
+    background-color: #5865F2;
+    color: #FFFFFF;
+}
+
+.opcoes-selecao label:hover {
+    background-color: #DDD;
+}
+
+.formulario-consulta {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.select {
+    min-width: 330px !important;
+}
+
+.formulario-consulta label {
+    font-weight: bold;
+}
+
+.formulario-consulta select {
+    width: 100%;
+    margin-bottom: 30px;
+    padding: 8px;
+    border: 1px solid #CCC;
+    border-radius: 4px;
+    background-color: #FFFFFF;
+    font-size: 14px;
+}
+
+#buttonConsultar {
+     width: 180px;
+    height: 50px;
+    padding: 10px 20px;
+    background-color: #5865F2;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#buttonConsultar:hover {
+    background-color: #FFFFFF;
+    color: #5865F2;
+    border: solid 1px #5865F2;
+}
+
+.section-consulta {
+    min-width: 25%;
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 200px;
+    background-color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px; 
+}
+
+/* Estilos  modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    padding: 25px 25px; 
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); 
+}
+
+.fechar {
+    position: absolute;
+    top: 0;
+    right: 5px;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 5px 5px 0px 0px;
+    cursor: pointer;
+}
+
+.fechar:hover {
+    width: 20px;
+    color: #5865F2;
+}
+.resultado-fipe {
+    color: #23272A;
+}
+
+.detalhe-item {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.valor-label {
+    color: #23272A;
+}
+
+.valor {
+    color: #23272A;
+}
+
+.error-modal {
+    color: #23272A;
+}
+
+/* Media Query */
+
+@media (max-width: 920px) {
+    main {
+        justify-content: center;
+        text-align: center;
+        padding: 0 auto;
+    }
+
+    .primeira-secao {
+        background-color: #23272A;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        height: 600px;
+        flex-wrap: wrap;
+        position: relative;
+    }
+
+    .card-inicial {
+        color: #FFFFFF;
+    }
+
+    .card-inicial h1 {
+        font-size: 56px;
+        padding-bottom: 25px;
+    }
+
+    .card-inicial p {
+        padding-bottom: 25px;
+    }
+
+    .logo {
+        width: 70%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .segunda-secao {
+        max-width: 1260px;
+        height: auto;
+        padding-top: 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-bottom: 40px;
+    }
+}
+
+/* footer */
+
+#footer {
+    padding: 10px;
+    text-decoration: none;
+	text-align: center;
+    background-color: white;
+    
+}
+
+#footer p {
+	font-size: 1.2rem;
+	max-width: 600px;
+	margin: auto;
+}
+
+#footer h2 {
+	margin: 30px 0;
+	color: var(--primary-color);
+}
+
+.social a {
+	margin: 0 5px;
+    color: #23272A;
+}
+
+
+
+
+
+
+
+
+
+
+
+

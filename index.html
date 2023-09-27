@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela FIPE</title>
+    <link rel="stylesheet" href="assets/css/index.css">
+</head>
+
+<body>
+    <header class="header">
+        
+        
+        <div class="text-box">
+            <h1 class="heading-primeiro">
+                <span class="heading-primeiro-main">Tabela Fipe</span>
+                <span class="heading-primeiro-sub">Consulte o preço médio de carros, motos e caminhões</span>
+            </h1>
+            <a href="#sectionConsulta" class="btn btn-white btn-animado">Comece a Consultar</a>
+        </div>
+   
+    </header>
+    <main>
+
+       
+        <section id="sectionConsulta" class="section-consulta">
+            <h2 class="titulo-decoracao-escura">Consultar Tabela FIPE</h2>
+            <div class="opcoes-selecao">
+                <input type="radio" id="carroRadio" name="tipoVeiculo" value="carros">
+                <label for="carroRadio">Carros</label>
+
+                <input type="radio" id="motoRadio" name="tipoVeiculo" value="motos">
+                <label for="motoRadio">Motos</label>
+
+                <input type="radio" id="caminhaoRadio" name="tipoVeiculo" value="caminhoes">
+                <label for="caminhaoRadio">Caminhões</label>
+            </div>
+
+            <form id="formConsultaFipe">
+                <div class="formulario-consulta">
+                    <label for="marcaSelect">Selecione a Marca:</label>
+                    <select class="select" name="marcaSelect" id="marcaSelect" required>
+                        <option value="">Selecione uma marca</option>
+                    </select>
+            
+                    <label for="modeloSelect">Selecione o Modelo:</label>
+                    <select class="select" name="modeloSelect" id="modeloSelect" required>
+                        <option value="">Selecione um modelo</option>
+                    </select>
+            
+                    <label for="anoSelect">Selecione o Ano:</label>
+                    <select class="select" name="anoSelect" id="anoSelect" required>
+                        <option value="">Selecione um ano</option>  
+                    </select>
+                </div>
+            
+                <button type="button" id="buttonConsultar">Consultar</button>
+            </form>
+
+            <div id="modalFipe" class="modal">
+                <span id="fecharModal" class="fechar"><i class="fa-solid fa-x"></i></span>
+                <h2>FIPE do Veiculo</h2>   
+                <pre id="modalInfo"></pre>
+            </div>
+            
+        </section>
+       
+
+    </main>
+
+    <section id="footer">
+        <h2>&copy; Desenvolvido por Lucas Fernandes Guanabara</h2>
+
+        <div class="social">
+            <a href="https://github.com/printflucasguanabara" target="_blank"><i class="fab fa-github fa-3x"></i></a>
+            <a href="https://www.linkedin.com/in/lucas-f-guanabara-1a688b1b7/" target="_blank"><i class="fab fa-linkedin fa-3x"></i></a>
+        </div>
+    </section>
+
+    <script src="assets/js/main.js"></script>
+    <script src="https://kit.fontawesome.com/7084929e68.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
