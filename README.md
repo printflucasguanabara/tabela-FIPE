@@ -1,5 +1,5 @@
 # API Tabela FIPE v1.5
-* Este projeto está atualmente 80% concluido. Todos os recursos principais foram implementados, apenas falta uma lehor estilização na interface para garantir uma boa experiência de usuário.
+* Este projeto está atualmente 80% concluido. Todos os recursos principais foram implementados, apenas falta uma melhor estilização na interface para garantir uma boa experiência de usuário.
 
 
 
