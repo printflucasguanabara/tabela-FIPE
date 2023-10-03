@@ -152,6 +152,31 @@ function preencherErrorConsulta(dados) {
         detalhe.innerHTML = `<strong class="valor-label">${labelText}:</strong> <span class="valor">${dados[prop]}</span>`;
         modalInfo.appendChild(detalhe);
     }
+};
+
+// Anim de Scroll!!
+
+let sections = document.querySelectorAll(".container, .section-consulta");
+let windowHeight = window.innerHeight;
+
+
+window.onscroll = function fadeIn() {
+    sections.forEach(section => {
+        let sectionSize = section.getBoundingClientRect();
+        let topPart = sectionSize.top;
+        let bottomPart = sectionSize.bottom;
+        
+        // valor "offset" para controlar quando o efeito deve começar
+        let offset = windowHeight * 0.3; // 30% da altura da janela
+
+        if (topPart < windowHeight - offset && bottomPart >= offset) {
+            section.style.opacity = "1";
+            section.style.transform = "translateX(0)";
+            section.style.transition = "1s ease-in-out";
+        } else {
+            section.style.opacity = "0";
+            section.style.transform = "translateX(-20px)";
+            section.style.transition = "1s ease-in-out";
+        }
+    });
 }
-
-
