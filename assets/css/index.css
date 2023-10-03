@@ -110,6 +110,21 @@ main {
   font-size: 14px;
 }
 
+.header-social{
+    padding: 10px;
+    text-decoration: none;
+	text-align: right;
+}
+.header-social a {
+	margin: 0 5px;
+    color: #fff;
+}
+
+.header-social a:hover{
+transition: 1.2s;
+color: #000000;
+}
+
 /* Containerss */
 
 .container {
@@ -245,7 +260,7 @@ main {
     border-radius: 10px; 
 }
 .section-consulta h2{
-color: black;
+color: #23272A;
 }
 
 /* Estilos  modal */
@@ -274,7 +289,7 @@ color: black;
 
 .fechar:hover {
     width: 20px;
-    color: #5865F2;
+    color: #CC7A2D;
 }
 .resultado-fipe {
     color: #23272A;
@@ -365,7 +380,7 @@ color: black;
 
 #footer h2 {
 	margin: 30px 0;
-	color: var(--primary-color);
+	color: #23272A;
 }
 
 .social a {
