@@ -10,3 +10,8 @@
      <img align='center' height='40' width='60' title='CSS3' alt='css3' src='https://github.com/devicons/devicon/blob/master/icons/javascript/javascript-original.svg' />
    <img align='center' height='40' width='60' title='CSS3' alt='css3' src='https://github.com/devicons/devicon/blob/master/icons/photoshop/photoshop-plain.svg' />
 </div>
+
+## API Status
+[![Uptime Robot status](https://img.shields.io/uptimerobot/status/m792332790-ff28744d182f8df575324136?style=for-the-badge&label=Fipe%20API)](http://parallelum.com.br/fipe/status) [![Uptime Robot status](https://img.shields.io/uptimerobot/status/m792381741-24bdd8f165658ec9e85edea8?style=for-the-badge&label=Fipe.org%20(Official%20Website))](http://parallelum.com.br/fipe/status)
+
+
