@@ -313,8 +313,6 @@ font-size: 30px;
     color: #23272A;
 }
 
-/* Media Query */
-
 @media (max-width: 920px) {
     main {
         justify-content: center;
