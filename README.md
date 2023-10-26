@@ -1,4 +1,4 @@
-# API Tabela FIPE v1.5
+# API Tabela FIPE v1.6
 
 * projeto em desenvolvimento, todos os recursos principais foram implementados, apenas falta uma melhor estilização na interface para garantir uma boa experiência de usuário.
 
