@@ -175,7 +175,7 @@ color: #000000;
     display: flex;
     gap: 20px;
     align-items: center;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 
 .opcoes-selecao input[type="radio"] {
@@ -184,17 +184,19 @@ color: #000000;
 
 .opcoes-selecao label {
     display: inline-block;
-    padding: 10px 20px;
-    background-color: #F0F0F0;
-    border: 1px solid #CCC;
-    border-radius: 4px;
+    padding: 12px 24px;
+    background-color: #EAEAEA;
+    border: 2px solid #CCCCCC;
+    border-radius: 8px;
     cursor: pointer;
-    font-size: 14px;
+    font-size: 16px;
+    transition: background-color 0.3s, border-color 0.3s;
 }
 
 .opcoes-selecao input[type="radio"]:checked+label {
     background-color: #CC7A2D;
     color: #FFFFFF;
+    border-color: #CC7A2D;
 }
 
 .opcoes-selecao label:hover {
@@ -204,64 +206,68 @@ color: #000000;
 .formulario-consulta {
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    margin-bottom: 20px;
+    gap: 15px;
+    margin-bottom: 30px;
 }
 
 .select {
-    min-width: 330px !important;
+    min-width: 350px !important;
 }
 
 .formulario-consulta label {
     font-weight: bold;
+    color: #333333;
 }
 
 .formulario-consulta select {
     width: 100%;
-    margin-bottom: 30px;
-    padding: 8px;
-    border: 1px solid #CCC;
-    border-radius: 4px;
-    background-color: #FFFFFF;
-    font-size: 14px;
-}
-
-#buttonConsultar {
-     width: 180px;
-    height: 50px;
-    padding: 10px 20px;
-    background-color: #CC7A2D;
-    color: #FFFFFF;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+    margin-bottom: 25px;
+    padding: 12px;
+    border: 2px solid #CCCCCC;
+    border-radius: 8px;
+    background-color: #F8F8F8;
     font-size: 16px;
 }
 
+#buttonConsultar {
+    width: 200px;
+    height: 60px;
+    padding: 12px 24px;
+    background-color: #CC7A2D;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s, border-color 0.3s;
+    display: block;
+    margin: 0 auto;
+}
+
 #buttonConsultar:hover {
-    background-color: #FFFFFF;
-    color: #CC7A2D;
-    border: solid 1px #CC7A2D;
+    background-color: #72451a;
+    transform: scale(1.1);
 }
 
 .section-consulta {
-    min-width: 25%;
-    min-height: 600px;
+    width: 50%;
+    min-height: 500px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    text-align: center;
     align-items: center;
-    margin: 200px;
-    background-color: #FFFFFF;
-    border: 1px solid #FFFFFF;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-    border-radius: 10px; 
+    margin: 150px auto;
+    background-color: #F4F4F4;
+    border: 2px solid #CCCCCC;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
 }
-.section-consulta h2{
-color: #23272A;
-margin: 20px;
-font-size: 30px;
+
+.section-consulta h2 {
+    color: #2F4858;
+    margin: 30px;
+    font-size: 36px;
+    text-align: center;
 }
 
 /* Estilos  modal */
@@ -272,46 +278,56 @@ font-size: 30px;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    background-color: #FFFFFF;
+    background-color: #F9F9F9;
     border-radius: 10px;
-    padding: 25px 25px; 
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); 
+    padding: 30px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.7);
+    max-width: 80%;
 }
 
 .fechar {
     position: absolute;
-    top: 0;
-    right: 5px;
+    top: 10px;
+    right: 10px;
     font-size: 24px;
     font-weight: bold;
-    padding: 5px 5px 0px 0px;
     cursor: pointer;
 }
 
 .fechar:hover {
-    width: 20px;
     color: #CC7A2D;
 }
+
 .resultado-fipe {
     color: #23272A;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 .detalhe-item {
-    margin: 10px 0;
-    font-size: 16px;
+    margin: 15px 0;
+    font-size: 18px;
 }
 
 .valor-label {
     color: #23272A;
+    font-weight: bold;
 }
 
 .valor {
-    color: #23272A;
+    color: #CC7A2D;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .error-modal {
-    color: #23272A;
+    color: #D32F2F;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 20px;
 }
+
 
 @media (max-width: 920px) {
     main {
