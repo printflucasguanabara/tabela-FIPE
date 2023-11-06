@@ -270,6 +270,16 @@ color: #000000;
     text-align: center;
 }
 
+@media only screen and (max-width: 768px) {
+    .formulario-consulta select {
+        font-size: 12px;
+    }
+
+    .section-consulta {
+        width: 100%;
+    }
+}
+
 /* Estilos  modal */
 .modal {
     display: none;
