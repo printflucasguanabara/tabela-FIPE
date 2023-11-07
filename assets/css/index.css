@@ -264,7 +264,7 @@ color: #000000;
 }
 
 .section-consulta h2 {
-    color: #2F4858;
+    color: #23272A;
     margin: 30px;
     font-size: 36px;
     text-align: center;
@@ -280,7 +280,8 @@ color: #000000;
     }
 }
 
-/* Estilos  modal */
+/*  modal */
+
 .modal {
     display: none;
     position: fixed;
@@ -288,20 +289,21 @@ color: #000000;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    background-color: #F9F9F9;
-    border-radius: 10px;
-    padding: 30px;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.7);
-    max-width: 80%;
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    padding: 40px;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
+    max-width: 60%;
 }
 
 .fechar {
     position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 24px;
+    top: 20px;
+    right: 20px;
+    font-size: 28px;
     font-weight: bold;
     cursor: pointer;
+    color: #555555;
 }
 
 .fechar:hover {
@@ -310,34 +312,33 @@ color: #000000;
 
 .resultado-fipe {
     color: #23272A;
-    font-size: 24px;
+    font-size: 28px;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .detalhe-item {
-    margin: 15px 0;
-    font-size: 18px;
+    margin: 20px 0;
+    font-size: 20px;
 }
 
 .valor-label {
-    color: #23272A;
+    color: #444444;
     font-weight: bold;
 }
 
 .valor {
     color: #CC7A2D;
-    font-size: 20px;
+    font-size: 24px;
     font-weight: bold;
 }
 
 .error-modal {
     color: #D32F2F;
-    font-size: 18px;
+    font-size: 20px;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 30px;
 }
-
 
 @media (max-width: 920px) {
     main {
